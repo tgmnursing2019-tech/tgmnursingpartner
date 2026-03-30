@@ -1,0 +1,93 @@
+import logo from "../assets/images/logos.png";
+
+const Footer = () => {
+  return (
+    <footer className="bg-gradient-to-br from-blue-900 to-gray-900 text-white mt-12">
+      <div className="max-w-7xl mx-auto px-5 py-10 grid gap-8 md:grid-cols-3">
+        {/* LEFT */}
+        <div className="flex items-center gap-3">
+          {/* LOGO */}
+          <img
+            src={logo}
+            alt="TGM Nursing Logo"
+            className="w-10 h-10 object-contain"
+          />
+
+          {/* TEXT */}
+          <div>
+            <h2 className="text-xl font-bold tracking-wide leading-tight">
+              TGM Nursing
+            </h2>
+
+            <p className="text-sm text-gray-300 leading-tight">
+              Institute of Paramedical Science
+              <br />
+              <span className="text-gray-400 text-xs">
+                செவிலியர் பயிற்சி நிறுவனம்
+              </span>
+            </p>
+          </div>
+        </div>
+
+        {/* CENTER */}
+        <div>
+          <h3 className="text-sm font-semibold mb-3 text-gray-200">
+            Quick Access
+          </h3>
+
+          <div className="grid grid-cols-2 gap-2 text-xs text-gray-300">
+            <p>📄 Admission</p>
+            <p>📚 Courses</p>
+            <p>🎓 Fee Offers</p>
+            <p>🏥 Facilities</p>
+            <p>🎥 Videos</p>
+            <p>❓ FAQ</p>
+          </div>
+        </div>
+
+        {/* RIGHT */}
+        <div>
+          <h3 className="text-sm font-semibold mb-3 text-gray-200">Contact</h3>
+
+          <p className="text-xs text-gray-300 leading-relaxed">
+            📍 Thirukovilur Road, <br />
+            Thiyagadurgam - 606206
+          </p>
+
+          <p className="text-sm mt-3 font-medium">📞 95006 55394</p>
+
+          <p className="text-xs mt-1 text-gray-400">
+            ✉️ tgmnursing2019@gmail.com
+          </p>
+        </div>
+      </div>
+
+      {/* DIVIDER */}
+      <div className="border-t border-white/10 mx-5"></div>
+
+      {/* BOTTOM BAR */}
+      <div className="bg-black text-gray-400 text-xs py-4">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-2">
+
+    {/* LEFT */}
+    <p className="text-center md:text-left">
+      © {new Date().getFullYear()} TGM Nursing Institute
+    </p>
+
+    {/* RIGHT */}
+    <a
+      href="https://rahmandev.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-300 hover:text-white transition"
+    >
+      Developed by <span className="font-semibold text-white">EliteCode Academy</span>
+    </a>
+
+  </div>
+</div>
+    </footer>
+  );
+};
+
+export default Footer;
